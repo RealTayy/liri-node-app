@@ -1,6 +1,3 @@
-// IMPORTANT TO DO!
-// REPLACE KEYS FOR TWITTER/SPOTIFY/OMDB WITH SECRETS PLEASE PLEASE PLEASE PLEASE AJSFDKLFDASJFADSKLJFDASKLJ
-
 require("dotenv").config();
 var keys = require("./keys.js");
 
@@ -8,19 +5,6 @@ var Spotify = require('node-spotify-api');
 var Twitter = require('twitter');
 var request = require('request');
 var fs = require('fs');
-
-// THIS BELOW IS VERY VERY BAD MAKE SURE YOU FIX IT LOL
-// var spotify = new Spotify({
-//     id: 'a2c48b3ad3f44d9eb14c96c481d16855',
-//     secret: '5cffd3baff9f4da1a3cdc593d21fb854'
-// });
-
-// var client = new Twitter({
-//     consumer_key: "xSqARpPIoZiphemdIHxre3s2q",
-//     consumer_secret: "A8O7l3QhRF2eDTrdFKctHYB0EXNbktFmy3FxS8ixFKRuU6pyHS",
-//     access_token_key: "3388831427-2gDswB5p4kYdkvvWfK5vTSdoxW5SUw9WxP3Nbxn",
-//     access_token_secret: "v6AwqoahGuRadYdAdHbTzXkjCNOh75JUcslDgx9NGNyuO",
-// })
 
 var spotify = new Spotify(keys.spotify);
 var client = new Twitter(keys.twitter);
